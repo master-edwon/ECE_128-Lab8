@@ -2,7 +2,7 @@
 
 module BinToBCD_tb(); 
 reg clk;        
-reg  en;// = 0;        
+reg  en;   
 reg   [11:0]  bin_d_in = 0; 
 wire  [15:0]  bcd_d_out; 
 wire rdy; 
@@ -20,7 +20,7 @@ BinToBCD uut(
     clk = 0; 
     forever 
         begin 
-        #10 clk = ~clk; //10*2 for full wave 
+        #10 clk = ~clk; 
         end 
     end 
  
